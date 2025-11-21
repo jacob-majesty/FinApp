@@ -1,4 +1,4 @@
-# FinApp - Aplicativo de Gestão Financeira Pessoal
+# FinApp:  projeto de faculdade
 
 ## Descrição do Projeto
 O FinApp é um aplicativo Android desenvolvido para auxiliar usuários no controle de sua vida financeira. O aplicativo permite o cadastro de gastos (débitos) e ganhos (créditos), oferecendo uma visão organizada das transações financeiras através de um dashboard intuitivo.
@@ -12,7 +12,7 @@ O FinApp é um aplicativo Android desenvolvido para auxiliar usuários no contro
 ## Tecnologias Utilizadas
 - Android SDK
 - API 28 do Android
-- Java/Kotlin (a definir pela equipe)
+- Kotlin
 - Estruturas de dados em memória
 
 ## Estrutura do Projeto
