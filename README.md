@@ -1,30 +1,80 @@
-# FinApp:  projeto de faculdade
+# 💰 FinApp: Controle de Finanças Pessoais
 
-## Descrição do Projeto
-O FinApp é um aplicativo Android desenvolvido para auxiliar usuários no controle de sua vida financeira. O aplicativo permite o cadastro de gastos (débitos) e ganhos (créditos), oferecendo uma visão organizada das transações financeiras através de um dashboard intuitivo.
+## 📝 Descrição do Projeto - Faculdade
 
-## Funcionalidades
-- **Dashboard Principal**: Interface com botões para navegação entre as funcionalidades do app
-- **Cadastro de Operações**: Tela para registrar novas transações financeiras (débitos ou créditos)
-- **Extrato Financeiro**: Listagem de todas as transações cadastradas
-- **Encerramento**: Opção para sair do aplicativo
+O FinApp é um aplicativo Android desenvolvido para atender à solicitação de uma FinTech, com o objetivo de auxiliar usuários no controle de suas finanças pessoais. O aplicativo permite o registro organizado de gastos (débitos) e ganhos (créditos), oferecendo uma visão clara das transações através de um dashboard intuitivo.
 
-## Tecnologias Utilizadas
-- Android SDK
-- API 28 do Android
-- Kotlin
-- Estruturas de dados em memória
+## ✨ Funcionalidades
 
-## Estrutura do Projeto
+O aplicativo é estruturado em três telas principais, acessíveis a partir do Dashboard:
 
+* **Dashboard Principal**: Interface inicial com botões distribuídos equilibradamente para navegação entre as funcionalidades (Cadastro, Extrato e Sair).
+* **Cadastro de Operações**: Tela para registrar novas transações financeiras (débitos ou créditos).
+    * Campos obrigatórios: Tipo da operação, Descrição curta e Valor.
+* **Extrato Financeiro**: Listagem de todas as operações cadastradas.
+    * Cada item exibe: Tipo da transação, Descrição e Valor.
+    * Utiliza template padrão do Android para listas, com estilização dos textos.
+* **Encerramento**: Botão "Sair" na Activity Principal, que finaliza o aplicativo.
 
+---
 
-## Como Executar
-1. Clone o repositório
-2. Abra o projeto no Android Studio
-3. Configure o emulador Android ou conecte um dispositivo físico
-4. Execute o aplicativo
+## 🛠️ Requisitos e Especificações Técnicas
 
-## Disciplina
-Desenvolvimento Mobile I
+| Especificação | Detalhe |
+| :--- | :--- |
+| **Linguagem** | Kotlin |
+| **API Alvo** | API 28 do Android |
+| **Armazenamento** | Dados armazenados exclusivamente em estruturas de dados **em memória** (não persistentes). |
+| **Validações** | Sob responsabilidade do desenvolvedor. |
+| **Tecnologias Adicionais** | Android SDK, Estruturas de dados em memória. |
 
+### Exemplo de Estrutura de Transação
+
+| Tipo    | Descrição | Valor       |
+|---------|-----------|-------------|
+| Débito  | Lazer     | R$ 20,50    |
+| Crédito | Salário   | R$ 10.000,00|
+| Débito  | Moradia   | R$ 1.200,00 |
+
+---
+
+## 📂 Estrutura de Diretórios e Camadas
+
+O projeto segue uma organização padrão Android, focando na separação de responsabilidades (Modelos, UI e Recursos).
+
+```
+FinApp/
+├── app/
+│   ├── src/
+│   │   └── main/
+│   │       ├── kotlin/com/finapp/android/
+│   │       │   ├── model/             # Classes de dados (Ex: Transaction.kt)
+│   │       │   ├── data/              # Lógica de manipulação dos dados em memória
+│   │       │   └── ui/                # Activities e Adapters da interface
+│   │       │       ├── activity/      # (DashboardActivity.kt, CadastroActivity.kt, ExtratoActivity.kt)
+│   │       │       └── adapter/       # (TransactionAdapter.kt)
+│   │       └── res/                   # Recursos do App
+│   │           ├── layout/            # Layouts XML (activity_dashboard.xml, etc.)
+│   │           └── values/            # Strings, Cores, Estilos
+├── build.gradle.kts (Module: :app)    # Configurações do SDK e dependências
+└── AndroidManifest.xml                # Definição de Activities e Permissões
+```
+
+---
+
+## 🚀 Como Executar o Projeto
+
+1. **Clone o Repositório**:
+   ```bash
+   git clone https://github.com/jacob-majesty/FinApp.git
+   ```
+
+2. **Abra no Android Studio**: Abra a pasta do projeto no Android Studio e aguarde a sincronização do Gradle.
+
+3. **Execute**: Execute o aplicativo em um Emulador (AVD) configurado com a **API 28** ou em um dispositivo físico.
+
+---
+
+## 🎓 Disciplina
+
+Este projeto foi desenvolvido como parte dos requisitos da disciplina de **Desenvolvimento Mobile I**.
