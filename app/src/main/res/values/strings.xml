@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">android</string>
+    <string name="app_name">FinApp</string>
+    <string name="btn_cadastro">1. Cadastrar Transação</string>
+    <string name="btn_extrato">2. Ver Extrato</string>
+    <string name="btn_sair">Sair do Aplicativo</string>
+
+    <string name="label_tipo_operacao">Tipo da Operação</string>
+    <string name="label_descricao">Descrição Curta</string>
+    <string name="label_valor">Valor</string>
+    <string name="hint_descricao">Ex: Salário, Aluguel, Lazer</string>
+    <string name="hint_valor">0.00</string>
+    <string name="btn_salvar">Salvar Transação</string>
+    <string name="validation_required">Este campo é obrigatório.</string>
 </resources>
