@@ -64,15 +64,29 @@ FinApp/
 
 ## 🚀 Como Executar o Projeto
 
-1. **Clone o Repositório**:
+## Pré-requisitos
+- Android Studio
+- Emulador ou dispositivo com API 28 (Android 9.0)
+
+## Passos Rápidos
+
+1. **Clone e abra** o projeto no Android Studio
    ```bash
    git clone https://github.com/jacob-majesty/FinApp.git
    ```
+2. **Configure o emulador** com API 28 (Pixel 4 recomendado)
+3. **Execute** ▶️ o projeto (Shift + F10)
+4. **Teste as funcionalidades**:
+    - **Cadastro**: Adicione transações (valida campos obrigatórios)
+    - **Extrato**: Veja todas as transações em memória
+    - **Sair**: Encerre o aplicativo
 
-2. **Abra no Android Studio**: Abra a pasta do projeto no Android Studio e aguarde a sincronização do Gradle.
+## Dicas
+- Use **Build → Clean Project** se houver erros de compilação
+- Dispositivo físico é mais rápido que emulador
+- Dados são voláteis (em memória) - reinicie o app para limpar
 
-3. **Execute**: Execute o aplicativo em um Emulador (AVD) configurado com a **API 28** ou em um dispositivo físico.
-
+ #### O app iniciará na **tela principal** com os 3 botões de navegação.
 ---
 
 ## 🎓 Disciplina
