@@ -89,6 +89,13 @@ FinApp/
  #### O app iniciará na **tela principal** com os 3 botões de navegação.
 ---
 
+<img width="378" height="715" alt="image" src="https://github.com/user-attachments/assets/ec49e5a2-e6d6-4ea0-ac67-ecb05fb77dbb" />
+
+<img width="386" height="710" alt="image" src="https://github.com/user-attachments/assets/3a2cd501-cd7a-41e8-9500-1d0315a9663f" />
+
+
+
+
 ## 🎓 Disciplina
 
 Este projeto foi desenvolvido como parte dos requisitos da disciplina de **Desenvolvimento Mobile I**.
